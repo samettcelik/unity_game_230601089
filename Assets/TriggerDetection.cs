@@ -2,20 +2,27 @@ using UnityEngine;
 
 public class TriggerDetection : MonoBehaviour
 {
-    public float destroyDelay = 1f; // Yok olmadan önce bekleme süresi
+    public float pullForce = 10f; // Çekim kuvveti
+    private bool isOccupied = false; // Trigger alanýnýn dolu olup olmadýðýný kontrol eder
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name + " hedefe ulaþtý!");
-
-        // Cismi yok etmeden önce bir zýplama etkisi uygula
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        if (rb != null)
+        if (!isOccupied) // Eðer Trigger alaný boþsa
         {
-            rb.AddForce(Vector3.up * 5f, ForceMode.Impulse); // Yukarý doðru kuvvet uygula
-        }
+            isOccupied = true; // Trigger alanýný kilitle
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                // Nesneyi merkeze çek
+                Vector3 directionToCenter = (transform.position - other.transform.position).normalized;
+                rb.AddForce(directionToCenter * pullForce, ForceMode.Impulse);
+            }
 
-        // Belirli bir süre sonra yok et
-        Destroy(other.gameObject, destroyDelay);
+            // Nesneyi hemen yok et
+            Destroy(other.gameObject);
+
+            // Trigger alanýný yeniden aç
+            isOccupied = false;
+        }
     }
 }
