@@ -1,17 +1,17 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public float maxSpeed = 20f; // Maksimum hız sınırı
-    public float gravityMultiplier = 2f; // Yerçekimi çarpanı (2 kat artırılmış yerçekimi)
+    public float maxSpeed = 20f; // Maksimum hÃ½z sÃ½nÃ½rÃ½
+    public float gravityMultiplier = 2f; // YerÃ§ekimi Ã§arpanÃ½ (2 kat artÃ½rÃ½lmÃ½Ã¾ yerÃ§ekimi)
 
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.useGravity = false; // Varsayılan yerçekimini devre dışı bırak
+        rb.useGravity = false; // VarsayÃ½lan yerÃ§ekimini devre dÃ½Ã¾Ã½ bÃ½rak
     }
 
     void Update()
@@ -20,13 +20,13 @@ public class ObjectMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        // Hareket yönü
+        // Hareket yÃ¶nÃ¼
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         // Kuvvet uygula
         rb.AddForce(movement * moveSpeed);
 
-        // Maksimum hızı kontrol et
+        // Maksimum hÃ½zÃ½ kontrol et
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
@@ -35,7 +35,7 @@ public class ObjectMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Manuel yerçekimi uygula
+        // Manuel yerÃ§ekimi uygula
         Vector3 gravity = Physics.gravity * gravityMultiplier;
         rb.AddForce(gravity, ForceMode.Acceleration);
     }

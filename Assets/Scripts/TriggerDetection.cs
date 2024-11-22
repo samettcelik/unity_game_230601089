@@ -1,42 +1,42 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class TriggerDetection : MonoBehaviour
 {
-    public float pullForce = 2f; // Çekim kuvveti
-    private bool isOccupied = false; // Trigger alanýnýn dolu olup olmadýðýný kontrol eder
-    private GameObject currentObject; // Ýçerideki nesneyi saklar
+    public float pullForce = 2f; // ï¿½ekim kuvveti
+    private bool isOccupied = false; // Trigger alanï¿½nï¿½n dolu olup olmadï¿½ï¿½ï¿½nï¿½ kontrol eder
+    private GameObject currentObject; // ï¿½ï¿½erideki nesneyi saklar
 
     void OnTriggerEnter(Collider other)
     {
-        if (!isOccupied) // Eðer Trigger alaný boþsa
+        if (!isOccupied) // Eï¿½er Trigger alanï¿½ boï¿½sa
         {
-            isOccupied = true; // Trigger alanýný kilitle
-            currentObject = other.gameObject; // Ýçeri giren nesneyi sakla
+            isOccupied = true; // Trigger alanï¿½nï¿½ kilitle
+            currentObject = other.gameObject; // ï¿½ï¿½eri giren nesneyi sakla
 
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                // Mevcut hýzýný sýfýrla
+                // Mevcut hï¿½zï¿½nï¿½ sï¿½fï¿½rla
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
 
-                // Nesneyi merkeze çek
+                // Nesneyi merkeze ï¿½ek
                 Vector3 directionToCenter = (transform.position - other.transform.position).normalized;
-                rb.AddForce(directionToCenter * pullForce, ForceMode.VelocityChange); // Daha yumuþak bir çekim
+                rb.AddForce(directionToCenter * pullForce, ForceMode.VelocityChange); // Daha yumuï¿½ak bir ï¿½ekim
             }
         }
-        else if (other.gameObject != currentObject) // Eðer Trigger alaný doluysa ve farklý bir nesne girmeye çalýþýyorsa
+        else if (other.gameObject != currentObject) // Eï¿½er Trigger alanï¿½ doluysa ve farklï¿½ bir nesne girmeye ï¿½alï¿½ï¿½ï¿½yorsa
         {
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                // Mevcut hýzýný sýfýrla
+                // Mevcut hï¿½zï¿½nï¿½ sï¿½fï¿½rla
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
 
                 // Nesneyi geri it
                 Vector3 directionAway = (other.transform.position - transform.position).normalized;
-                rb.AddForce(directionAway * (pullForce * 0.5f), ForceMode.VelocityChange); // Daha yumuþak bir itme
+                rb.AddForce(directionAway * (pullForce * 0.5f), ForceMode.VelocityChange); // Daha yumuï¿½ak bir itme
             }
         }
     }
@@ -48,54 +48,54 @@ public class TriggerDetection : MonoBehaviour
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                // Platform üzerindeki nesnenin hareketini kontrol et
-                rb.velocity *= 0.9f; // Yavaþ yavaþ hareketi durdur
-                rb.angularVelocity *= 0.9f; // Dönüþ hýzýný azalt
+                // Platform ï¿½zerindeki nesnenin hareketini kontrol et
+                rb.velocity *= 0.9f; // Yavaï¿½ yavaï¿½ hareketi durdur
+                rb.angularVelocity *= 0.9f; // Dï¿½nï¿½ï¿½ hï¿½zï¿½nï¿½ azalt
             }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == currentObject) // Eðer mevcut nesne Trigger alanýndan çýkarsa
+        if (other.gameObject == currentObject) // Eï¿½er mevcut nesne Trigger alanï¿½ndan ï¿½ï¿½karsa
         {
-            isOccupied = false; // Trigger alanýný serbest býrak
+            isOccupied = false; // Trigger alanï¿½nï¿½ serbest bï¿½rak
             currentObject = null; // Mevcut nesneyi temizle
         }
     }
 
     void Update()
     {
-        // Manuel olarak nesneyi geri almak için
+        // Manuel olarak nesneyi geri almak iï¿½in
         if (currentObject != null)
         {
             Rigidbody rb = currentObject.GetComponent<Rigidbody>();
-            if (Input.GetKeyDown(KeyCode.R)) // "R" tuþuna basýlarak geri alma iþlemi
+            if (Input.GetKeyDown(KeyCode.R)) // "R" tuï¿½una basï¿½larak geri alma iï¿½lemi
             {
                 Vector3 directionAway = (currentObject.transform.position - transform.position).normalized;
-                rb.AddForce(directionAway * (pullForce * 3f), ForceMode.Impulse); // Geriye güçlü bir itme
-                isOccupied = false; // Trigger alanýný serbest býrak
+                rb.AddForce(directionAway * (pullForce * 3f), ForceMode.Impulse); // Geriye gï¿½ï¿½lï¿½ bir itme
+                isOccupied = false; // Trigger alanï¿½nï¿½ serbest bï¿½rak
                 currentObject = null; // Mevcut nesneyi temizle
             }
         }
     }
 
-    // YENÝ EKLENEN KODLAR
+    // YENï¿½ EKLENEN KODLAR
     void OnMouseOver()
     {
-        // Eðer fare platform üzerindeki nesneye odaklanýrsa ve týklanýrsa
-        if (Input.GetMouseButtonDown(0) && currentObject != null) // Sol fare týklamasý
+        // Eï¿½er fare platform ï¿½zerindeki nesneye odaklanï¿½rsa ve tï¿½klanï¿½rsa
+        if (Input.GetMouseButtonDown(0) && currentObject != null) // Sol fare tï¿½klamasï¿½
         {
             Rigidbody rb = currentObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 // Nesneyi geri it
                 Vector3 directionAway = (currentObject.transform.position - transform.position).normalized;
-                rb.AddForce(directionAway * (pullForce * 2f), ForceMode.Impulse); // Daha yumuþak bir geri itme
-                isOccupied = false; // Platform tekrar kullanýlabilir hale gelir
+                rb.AddForce(directionAway * (pullForce * 2f), ForceMode.Impulse); // Daha yumuï¿½ak bir geri itme
+                isOccupied = false; // Platform tekrar kullanï¿½labilir hale gelir
                 currentObject = null; // Mevcut nesneyi temizle
             }
         }
     }
-    // YENÝ EKLENEN KODLAR SONU
+    // YENï¿½ EKLENEN KODLAR SONU
 }
