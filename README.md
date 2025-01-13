@@ -26,7 +26,11 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 
    Nesneler başarılı bir şekilde eşleştirildiğinde, oyuncuya görsel geri bildirim sağlamak için bir ışıltı efekti devreye girer. Bu efekt, oyuncunun başarısını vurgular ve oynanışı daha dinamik kılar.
 
-   ![Işıltı Efekti](#)
+      <p align="center">
+     <img src="https://github.com/user-attachments/assets/d3616949-ac26-42b1-b282-1f972f044170" width="250" height="500">
+   </p>
+ 
+
 
 4. **Eşleşme Yeteneği ve Elektrik Efekti ⚡**
 
@@ -36,7 +40,7 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 
 5. **Büyütme Animasyonu 🌱**
 
-   Eşleştirilen nesneler, başarıyı görsel olarak vurgulamak için geçici olarak büyür. Bu animasyon, oyunun görsel çekiciliğini artırır.
+   Eşleştirilen nesneler, nesneleri daha kolay ve hızlı olarak götürmek için geçici olarak büyür. Bu animasyon, oyunun görsel çekiciliğini artırır.
 
    ![Büyütme Animasyonu](#)
 
