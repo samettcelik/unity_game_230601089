@@ -45,8 +45,9 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
    Eşleştirilen nesneler, nesneleri daha kolay ve hızlı olarak götürmek için geçici olarak büyür. Bu animasyon, oyunun görsel çekiciliğini artırır.
 
       <p align="center">
-     <img src="htps://github.com/user-attachments/assets/70562315-e19a-49fc-8186-9f7bf09343d7" width="250" height="500">
+     <img src="https://github.com/user-attachments/assets/25e1563e-22d4-41a8-9fb4-a99e0f408c51" width="250" height="500">
    </p>
+
 
 ## Nasıl Oynanır? 🎮
 
