@@ -18,7 +18,7 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
    Oyunun başlangıcında, oyuncu çim zemin üzerinde dağılmış çeşitli nesnelerle karşılaşır. Amaç, aynı türden nesneleri bir araya getirerek eşleştirme yapmaktır.
 
      <p align="center">
-  <img src="https://github.com/user-attachments/assets/ce00908b-fe66-4b8b-aaf3-9f72944c5d5e" width="300" height="auto">
+  <img src="https://github.com/user-attachments/assets/ce00908b-fe66-4b8b-aaf3-9f72944c5d5e" width="300" height="900">
 </p>
 
 
