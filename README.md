@@ -1,7 +1,7 @@
 WEBGL : https://samettcelik.github.io/unity_game_230601089
 
 BAKIRÇAY ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ
-Samet Çelik | 230601089 
+### Samet Çelik | 230601089 
 
 # UNITY 3D Oyun Dökümanı
 
