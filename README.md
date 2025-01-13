@@ -1,4 +1,4 @@
-WEBGL : https://samettcelik.github.io/unity_game_230601089) 
+WEBGL : https://samettcelik.github.io/unity_game_230601089
 
 # Unity3D Oyun Dökümanı
 
