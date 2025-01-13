@@ -1,7 +1,7 @@
-WEBGL : https://samettcelik.github.io/unity_game_230601089
+#### WEBGL : https://samettcelik.github.io/unity_game_230601089
 
-BAKIRÇAY ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ
-### Samet Çelik | 230601089 
+#### BAKIRÇAY ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ
+#### Samet Çelik | 230601089 
 
 # UNITY 3D Oyun Dökümanı
 
@@ -65,4 +65,4 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 ## Teşekkürler 🙏
 
 BAKIRÇAY ÜNİVERSİTESİ 4.SINIF BİLGİSAYAR MÜHENDİSLİĞİ ÖĞRENCİSİ
-- Samet Çelik | 230601089 
+#### Samet Çelik | 230601089 
