@@ -36,7 +36,9 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 
    Oyuncu, özel bir eşleşme yeteneğini etkinleştirdiğinde, nesneler bir araya gelerek elektrik efekti ile vurgulanır. Bu, oyunda stratejik hamleler yapmayı teşvik eder.
 
-   ![Eşleşme Yeteneği ve Elektrik Efekti](#)
+      <p align="center">
+     <img src="https://github.com/user-attachments/assets/431f54c5-7c25-417a-a2fd-5ad777089c43" width="250" height="500">
+   </p>
 
 5. **Büyütme Animasyonu 🌱**
 
