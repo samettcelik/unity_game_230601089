@@ -17,22 +17,24 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 
    Oyunun başlangıcında, oyuncu çim zemin üzerinde dağılmış çeşitli nesnelerle karşılaşır. Amaç, aynı türden nesneleri bir araya getirerek eşleştirme yapmaktır.
 
-  ![image](https://github.com/user-attachments/assets/ce00908b-fe66-4b8b-aaf3-9f72944c5d5e)
+     ![image](https://github.com/user-attachments/assets/ce00908b-fe66-4b8b-aaf3-9f72944c5d5e)
+   
+<img src="https://github.com/user-attachments/assets/ce00908b-fe66-4b8b-aaf3-9f72944c5d5e" width="300" height="auto">
 
 
-2. **Işıltı Efekti ✨**
+3. **Işıltı Efekti ✨**
 
    Nesneler başarılı bir şekilde eşleştirildiğinde, oyuncuya görsel geri bildirim sağlamak için bir ışıltı efekti devreye girer. Bu efekt, oyuncunun başarısını vurgular ve oynanışı daha dinamik kılar.
 
    ![Işıltı Efekti](#)
 
-3. **Eşleşme Yeteneği ve Elektrik Efekti ⚡**
+4. **Eşleşme Yeteneği ve Elektrik Efekti ⚡**
 
    Oyuncu, özel bir eşleşme yeteneğini etkinleştirdiğinde, nesneler bir araya gelerek elektrik efekti ile vurgulanır. Bu, oyunda stratejik hamleler yapmayı teşvik eder.
 
    ![Eşleşme Yeteneği ve Elektrik Efekti](#)
 
-4. **Büyütme Animasyonu 🌱**
+5. **Büyütme Animasyonu 🌱**
 
    Eşleştirilen nesneler, başarıyı görsel olarak vurgulamak için geçici olarak büyür. Bu animasyon, oyunun görsel çekiciliğini artırır.
 
