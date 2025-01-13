@@ -65,4 +65,4 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 ## Teşekkürler 🙏
 
 BAKIRÇAY ÜNİVERSİTESİ 4.SINIF BİLGİSAYAR MÜHENDİSLİĞİ ÖĞRENCİSİ
-Samet Çelik | 230601089 
+- Samet Çelik | 230601089 
