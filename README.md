@@ -51,7 +51,7 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 - Oyunu başlatın.
 - Mouse veya dokunmatik ekran kullanarak benzer nesneleri seçin ve eşleştirin.
 - Başarılı eşleştirmelerle puan kazandıkça ilerleyin.
-- E tuşuna basarak özel yeteneği etkinleştirin ve elektrik efektleriyle eşleşen nesneleri görün.
+- Mouse ile özel yeteneğe basarak özel yeteneği etkinleştirin ve elektrik efektleriyle eşleşen nesneleri görün.
 
 ## Gelecekteki İyileştirmeler 📈
 
@@ -61,10 +61,5 @@ Bu proje, Unity3D kullanılarak geliştirilmiş, oyuncuların aynı nesneleri e�
 
 ## Teşekkürler 🙏
 
-- Geliştirici: Samet T. Çelik
-- Tasarımcı: Samet T. Çelik
-- Özel Teşekkürler: Unity Asset Store katkıcıları
-
-## İletişim 📧
-
-Herhangi bir sorunuz için [your-email@example.com](mailto:your-email@example.com) adresinden iletişime geçebilirsiniz.
+BAKIRÇAY ÜNİVERSİTESİ 4.SINIF BİLGİSAYAR MÜHENDİSLİĞİ ÖĞRENCİSİ
+Samet Çelik | 230601089 
